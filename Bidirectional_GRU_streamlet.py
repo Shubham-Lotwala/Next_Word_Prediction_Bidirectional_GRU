@@ -9,7 +9,7 @@ st.title("Next Word Prediction")
 st.markdown("Predict the next word in Shakespearean style")
 
 # File paths
-model_path = "../LSTM/Bidirectional_GRU.keras"
+model_path = "./Bidirectional_GRU.keras"
 text_path = "shakespeare-hamlet.txt"
 
 # Load resources
