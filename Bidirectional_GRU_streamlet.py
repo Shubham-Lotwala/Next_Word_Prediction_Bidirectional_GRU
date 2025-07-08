@@ -1,7 +1,5 @@
 import streamlit as st
 import numpy as np
-import tensorflow as tf
-import keras
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import load_model
@@ -45,7 +43,7 @@ with st.spinner("Loading resources..."):
 
 # User input section
 st.subheader("Text Input")
-seed_text = st.text_input("Enter starting text:", "to be or not to be")
+seed_text = st.text_input("Enter starting text:")
 generate_btn = st.button("Predict Next Word")
 
 # Generation process
