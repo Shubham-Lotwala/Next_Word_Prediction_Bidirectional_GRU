@@ -86,7 +86,7 @@ with gr.Blocks(title="Shakespearean Next Word Predictor", theme="soft") as app:
     
     gr.Markdown("> **Note**: Prediction quality is limited as the model was trained on only 4000 words")
     
-    with gr.Accordion("How This Works", open=False):
+    with gr.Accordion("How This Works", open=True):
         gr.Markdown("""
         1. Your input text is converted to numerical tokens
         2. The sequence is padded/trimmed to match the model's requirements
@@ -95,10 +95,7 @@ with gr.Blocks(title="Shakespearean Next Word Predictor", theme="soft") as app:
         5. Results are displayed
         """)
     
-    with gr.Accordion("Model Information", open=False):
-        gr.Markdown(f"""
-         - **Model Type**: Bidirectional GRU
-        """)
+
     
     predict_btn.click(
         fn=predict_next_word,
